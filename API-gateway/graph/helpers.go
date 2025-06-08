@@ -85,7 +85,7 @@ func forwardRequest(ctx context.Context, query string, variables map[string]inte
 
 // forwardRequestMQ forwards requests using RabbitMQ.
 func forwardRequestMQ(queue string, variables map[string]interface{}, requestedResolver string) ([]byte, error) {
-	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
+	conn, err := amqp.Dial("amqps://qyxoakeh:NKblQPKlN6NbvM8yUM22SvBqkDKCop7j@armadillo.rmq.cloudamqp.com/qyxoakeh")
 	if err != nil {
 		return nil, fmt.Errorf("failed to connect to RabbitMQ: %w", err)
 	}

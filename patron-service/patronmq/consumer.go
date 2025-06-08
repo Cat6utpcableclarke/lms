@@ -22,7 +22,7 @@ type GraphQLMessage struct {
 }
 
 func StartRabbitMQConsumer(dbpool *pgxpool.Pool) {
-	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
+	conn, err := amqp.Dial("amqps://qyxoakeh:NKblQPKlN6NbvM8yUM22SvBqkDKCop7j@armadillo.rmq.cloudamqp.com/qyxoakeh")
 	if err != nil {
 		log.Fatal("Failed to connect to RabbitMQ:", err)
 	}

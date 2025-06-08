@@ -119,7 +119,7 @@ import (
 // }
 
 func CheckAvailability(BookID string) (bool, *amqp.Connection, string, error) {
-	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
+	conn, err := amqp.Dial("amqps://qyxoakeh:NKblQPKlN6NbvM8yUM22SvBqkDKCop7j@armadillo.rmq.cloudamqp.com/qyxoakeh")
 	if err != nil {
 		return false, nil, "", fmt.Errorf("failed to connect to RabbitMQ: %v", err)
 	}
@@ -351,7 +351,7 @@ func parseTimePtr(s *string) (*time.Time, error) {
 }
 
 func GetRabbitMQConnection() (*amqp.Connection, error) {
-	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
+	conn, err := amqp.Dial("amqps://qyxoakeh:NKblQPKlN6NbvM8yUM22SvBqkDKCop7j@armadillo.rmq.cloudamqp.com/qyxoakeh")
 	if err != nil {
 		return nil, fmt.Errorf("failed to connect to RabbitMQ: %w", err)
 	}

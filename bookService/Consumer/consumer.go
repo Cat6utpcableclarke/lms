@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	rabbitMQURL     = "amqp://guest:guest@localhost:5672/"
+	rabbitMQURL     = "amqps://qyxoakeh:NKblQPKlN6NbvM8yUM22SvBqkDKCop7j@armadillo.rmq.cloudamqp.com/qyxoakeh"
 	bookCopiesQueue = "book-copies-queue"
 )
 
